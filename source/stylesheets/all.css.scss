@@ -6,24 +6,44 @@
 @charset "utf-8";
 @import "normalize";
 
+$playfairdisplay: "Playfair Display", serif;
+
 body {
   background: #f9f9f9;
   font-family: "-applesystem", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
+
 }
 
-body {
-  @include outer-container;
+header {
+  @include pad(8px 32px);
+}
 
+section{
+  @include pad(0px 32px);
 }
 .navbar{
   @include outer-container;
-  @include span-columns(12);
-}
-.steps {
-  @include outer-container;
+  float:right;
+  font-family: $playfairdisplay;
 }
 
-.step {
+.description {
+  @extend .navbar;
+  text-align:right;
+  line-height:1.2;
+  max-width: 64rem;
+  clear:both;
+  margin-bottom: 3em;
+  h1{
+    font-size: 80px;
+  }
+}
+
+.issue-parent {
+
+}
+
+.issues {
   @include span-columns(4);
 }
