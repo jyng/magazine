@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@import "bourbon";
+@import "neat";
+
+@charset "utf-8";
+@import "normalize";
+
+body {
+  background: #f9f9f9;
+  font-family: "-applesystem", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+
+body {
+  @include outer-container;
+
+}
+.navbar{
+  @include outer-container;
+  @include span-columns(12);
+}
+.steps {
+  @include outer-container;
+}
+
+.step {
+  @include span-columns(4);
+}
